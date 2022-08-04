@@ -1,0 +1,109 @@
+html, body {
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+background-color:hsl(225, 100%, 94%);
+}
+#page{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0 auto;
+    height: 100%;
+    min-width: 375px;
+    max-width: 1440px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    
+}
+.maincard{
+    width: 85%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.main-image{
+    width: 100%;
+    object-fit: cover;
+}
+.card--text__main{
+    font-size: 21px;
+    margin: 27px auto 20px auto;
+    font-weight: 900;
+}
+.card--text__description{
+    line-height: 150%;
+    width: 85%;
+    margin: 0 auto;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.card--infobox{
+    width: 80%;
+    background-color:hsl(225, 100%, 98%) ;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    margin: 25px auto;
+    border-radius: 13px;
+    padding: 15px;
+}
+.card--infobox__plan{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+.card--infobox__change{
+    font-weight: 700;
+    font-size: 12px;
+   align-self: center;
+}
+.card--infobox__change:hover{
+    color: hsl(225, 100%, 94%);
+}
+.annual-plan{
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+.card--infobox__price{
+    font-size: 14px;
+    color:hsl(224, 23%, 55%) ;
+}
+.btn{
+    font-weight: 700;
+    font-size: 15px;
+    background-color: hsl(245, 75%, 52%) ;
+    color: white;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    box-shadow: hsl(225, 100%, 94%) 0px 2px 1px, hsl(225, 100%, 94%)  0px 4px 2px, hsl(225, 100%, 94%)  0px 8px 4px, hsl(225, 100%, 94%)  0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.cancel{
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin: 20px auto 30px;
+}
+.cancel:hover{
+    color: black;
+}
+
+
+p{
+    font-size: 16px;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
