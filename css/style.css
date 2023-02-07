@@ -47,7 +47,7 @@ body{
     object-fit: cover;
 
 }
-.card--text h2{
+.card--text h1{
     font-size: 20px;
     margin: 27px auto 20px auto;
     font-weight: 800;
