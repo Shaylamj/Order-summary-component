@@ -41,6 +41,7 @@ background-color:hsl(225, 100%, 94%);
 @media only screen and (min-width: 1440px){
 .cardContainer{
     width: 30%;
+    height: 75%;
 } 
 }
 .card--image img{
