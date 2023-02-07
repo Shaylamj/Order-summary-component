@@ -28,7 +28,7 @@ body{
     }
 
     
-.maincard{
+main{
     position:absolute;
     margin: 0 auto;
     overflow:hidden;
@@ -38,7 +38,7 @@ body{
     
 }
 @media only screen and (min-width: 1440px){
-.maincard{
+main{
     width: 30%;
 } 
 }
@@ -47,7 +47,7 @@ body{
     object-fit: cover;
 
 }
-.card--text h1{
+.order-summary{
     font-size: 20px;
     margin: 27px auto 20px auto;
     font-weight: 800;
