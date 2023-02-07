@@ -7,37 +7,57 @@ background-color:hsl(225, 100%, 94%);
 }
 #page{
     font-family: 'Red Hat Display', sans-serif;
-    margin: 0 auto;
-    height: 100%;
-    min-width: 375px;
-    max-width: 1440px;
+    height: 100%;     
     display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
     
 }
-.maincard{
-    width: 85%;
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
+.bg{
+    display: none;
 }
-.main-image{
+@media only screen and (min-width: 1440px){
+    .bg {
+        display: block;
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        min-width: 100%;
+      }
+    }
+  
+.cardContainer{
+    position:absolute;
+    margin: 0 auto;
+    overflow:hidden;
+    width: 85%;
+    border-radius: 20px;
+}
+.maincard{
+    background-color: white;
+    
+}
+@media only screen and (min-width: 1440px){
+.cardContainer{
+    width: 30%;
+} 
+}
+.card--image img{
     width: 100%;
     object-fit: cover;
+
 }
-.card--text__main{
-    font-size: 21px;
+.card--text h2{
+    font-size: 20px;
     margin: 27px auto 20px auto;
-    font-weight: 900;
+    font-weight: 800;
 }
-.card--text__description{
+.card--text p{
     line-height: 150%;
-    width: 85%;
+    width: 83%;
     margin: 0 auto;
     color: hsl(224, 23%, 55%);
-    font-weight: 500;
 }
 .card--infobox{
     width: 80%;
@@ -56,13 +76,14 @@ background-color:hsl(225, 100%, 94%);
     text-align: start;
     gap: 5px;
 }
-.card--infobox__change{
+.card--infobox a{
     font-weight: 700;
     font-size: 12px;
    align-self: center;
+   text-decoration: none;
 }
-.card--infobox__change:hover{
-    color: hsl(225, 100%, 94%);
+.card--infobox a:hover{
+    opacity: 50%;
 }
 .annual-plan{
     font-weight: 700;
@@ -85,14 +106,19 @@ background-color:hsl(225, 100%, 94%);
     box-shadow: hsl(225, 100%, 94%) 0px 2px 1px, hsl(225, 100%, 94%)  0px 4px 2px, hsl(225, 100%, 94%)  0px 8px 4px, hsl(225, 100%, 94%)  0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
-
+.btn:hover{
+    opacity: 50%;
+}
 .cancel{
     font-size: 15px;
     font-weight: 700;
-    color: hsl(224, 23%, 55%);
-    margin: 20px auto 30px;
+    padding: 8%;
 }
-.cancel:hover{
+.cancel a{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.cancel a:hover{
     color: black;
 }
 
@@ -105,5 +131,12 @@ p{
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     position: absolute;
+     bottom: 5px;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
